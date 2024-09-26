@@ -3,7 +3,8 @@
 
 **Overview**
 
-The Image to Sketch project is a Python-based application that converts images into artistic sketches. Using image processing techniques, this tool utilizes OpenCV and other libraries to apply various transformations and filters, resulting in a stylized pencil sketch effect.
+The Image to Sketch project is a Python-based application that converts images into artistic sketches.
+Using image processing techniques, this tool utilizes OpenCV and other libraries to apply various transformations and filters, resulting in a stylized pencil sketch effect.
 
 **Features**
 
@@ -18,6 +19,8 @@ Python 3.x
 OpenCV
 NumPy
 Matplotlib (optional, for visualizing images)
+
+
 You can install the required libraries using pip:
 
 bash
@@ -29,7 +32,9 @@ Clone the repository:
 bash
 Copy code
 git clone https://github.com/srujini13/image-to-sketch.git
+
 cd image-to-sketch
+
 Install the required packages (as mentioned above).
 
 Usage
