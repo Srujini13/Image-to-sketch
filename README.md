@@ -1,4 +1,4 @@
-#Image to Sketch Project
+**Image to Sketch Project
 
 
 #Overview
