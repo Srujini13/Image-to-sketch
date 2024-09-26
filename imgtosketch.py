@@ -1,0 +1,22 @@
+import cv2
+image = cv2.imread('Image.jpeg')
+cv2.imshow('Original', image)
+cv2.waitKey(0)
+grey_img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.imshow('Grey', grey_img)
+cv2.waitKey(0)
+invert = cv2.bitwise_not(grey_img) 
+cv2.imshow('Inverted', invert)
+cv2.waitKey(0)
+blur = cv2.GaussianBlur(invert, (21, 21), 0)
+cv2.imshow('Blur', blur)
+cv2.waitKey(0)
+invertedblur = cv2.bitwise_not(blur)
+cv2.imshow('Invertedblur', invertedblur)
+cv2.waitKey(0)
+sketch = cv2.divide(grey_img, invertedblur, scale=256.0)
+cv2.imshow('Sketch', sketch)
+cv2.waitKey(0)
+cv2.imwrite("sketch.png", sketch)
+
+
